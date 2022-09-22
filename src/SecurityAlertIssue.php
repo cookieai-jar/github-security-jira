@@ -92,7 +92,7 @@ EOT;
 
         $this->setKeyLabel($githubRepo);
         $this->setKeyLabel($this->uniqueId());
-        $this->setTitle("{$this->package} ({$safeVersion}) - {$this->severity}");
+        $this->setTitle("Vulnerability Scan: {$this->package} ({$safeVersion}) - {$this->severity}");
         $this->setBody($body);
 
         $labels = \getenv('JIRA_ISSUE_LABELS');
