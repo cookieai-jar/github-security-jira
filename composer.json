@@ -7,12 +7,16 @@
         "softonic/graphql-client": "^2.1",
         "symfony/console": "^5",
         "symfony/yaml": "^6.1",
-        "reload/jira-security-issue": "^1.0.0"
+        "reload/jira-security-issue": "dev-master"
     },
     "repositories": [
       {
         "type": "vcs",
         "url": "https://github.com/appocular/coding-standard"
+      },
+      {
+        "type": "git",
+        "url": "https://github.com/cookieai-jar/jira-security-issue"
       }
     ],
     "autoload": {
