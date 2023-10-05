@@ -28,7 +28,7 @@ class PullRequestIssue extends JiraSecurityIssue
      */
     public function __construct(array $data)
     {
-        $this->package = \preg_filter('/.*Bump (.*) from.*/', '$1', $data['title']) ?? '';
+        $this->package = \preg_filter('/.*Bump (.*).*/', '$1', $data['title']) ?? '';
         $this->manifestPath = \preg_filter('/.* in \/(.*)/', '$1', $data['title']) ?? '';
         $this->safeVersion = \preg_filter('/.*to ([^ ]+).*/', '$1', $data['title']) ?? '';
 
